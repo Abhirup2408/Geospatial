@@ -2,12 +2,13 @@ import pandas as pd
 from rapidfuzz import fuzz
 import spacy
 from spellchecker import SpellChecker
+import streamlit as st
 
 # Load the spaCy model
 nlp = spacy.load("en_core_web_trf")
 
 # Load the dataset
-countries = pd.read_csv(r"countries.csv") 
+countries = pd.read_csv(r"c:\Users\ACER\Downloads\countries.csv")
 countries["category"] = "country"
 countries["name"] = countries["name"].apply(lambda x: x.lower())
 
@@ -68,15 +69,24 @@ def correct_names(text):
     
     return my_list
 
-# Take user input
-gfg = input("Enter a location or sentence: ")
+# Streamlit UI
+st.title("Fuzzy Location Name Matching")
 
-# Process and print the results
-corrected_locations = correct_names(gfg)
+# Text input for user input
+user_input = st.text_input("Enter a location or sentence:")
 
-if corrected_locations:
-    print("Corrected locations with details:")
-    for location in corrected_locations:
-        print(location)
-else:
-    print("No locations found.")
+# Button to trigger the name correction
+if st.button("Find Locations"):
+    # If user input is given
+    if user_input:
+        corrected_locations = correct_names(user_input)
+
+        # Display results
+        if corrected_locations:
+            st.write("Corrected locations with details:")
+            for location in corrected_locations:
+                st.write(location)
+        else:
+            st.write("No locations found.")
+    else:
+        st.write("Please enter a location or sentence.")

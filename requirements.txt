@@ -3,3 +3,4 @@ thinc==8.1.7
 pandas
 rapidfuzz
 spellchecker
+spacy_streamlit

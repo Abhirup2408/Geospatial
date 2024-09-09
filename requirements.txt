@@ -20,3 +20,4 @@ en-core-web-trf @ https://github.com/explosion/spacy-models/releases/download/en
 # Any additional dependencies required for spaCy's transformer model
 torch
 transformers
+tokenizers==0.13.3

@@ -8,7 +8,7 @@ import streamlit as st
 nlp = spacy.load("en_core_web_trf")
 
 # Load the dataset
-countries = pd.read_csv(r"c:\Users\ACER\Downloads\countries.csv")
+countries = pd.read_csv(r"countries.csv")
 countries["category"] = "country"
 countries["name"] = countries["name"].apply(lambda x: x.lower())
 

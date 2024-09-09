@@ -1,6 +1,6 @@
+spacy==3.5.0
+thinc==8.1.7
+numpy==1.24.2
 pandas
 rapidfuzz
-spacy
 spellchecker
-thinc
-cupy

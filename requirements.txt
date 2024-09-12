@@ -9,7 +9,7 @@ torch==2.2.0
 transformers==4.37.2
 tokenizers==0.15.1
 spacy==3.6.1  # Downgraded version to avoid issues with Python 3.12
-
+warnings
 
 
 

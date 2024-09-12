@@ -1,16 +1,18 @@
-numpy
 pandas
 rapidfuzz==3.6.1
 pyspellchecker==0.8.1
 streamlit
-torch==2.2.0  # PyTorch version
-transformers==4.37.2  # Transformers library for en_core_web_trf model
+torch==2.2.0
+transformers==4.37.2
 tokenizers==0.15.1
 spacy==3.7.2
 spacy-curated-transformers==0.2.2
 spacy-legacy==3.0.12
 spacy-loggers==1.0.5
-thinc==8.2.2
+thinc==8.1.8  # Downgraded version to avoid backend issues
+Cython  # Ensures Cython compilation support
+numpy   # Ensures numpy dependency is explicitly installed
+
 
 #pandas
 #rapidfuzz

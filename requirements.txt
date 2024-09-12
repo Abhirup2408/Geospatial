@@ -11,8 +11,6 @@
 #spacy-loggers==1.0.5
 #thinc==8.2.2
 
-
-python==3.12.1
 pandas
 rapidfuzz
 spacy==3.4.0  # Downgraded spaCy to a stable version

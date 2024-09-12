@@ -9,9 +9,7 @@ torch==2.2.0
 transformers==4.37.2
 tokenizers==0.15.1
 spacy==3.6.1  # Downgraded version to avoid issues with Python 3.12
-spacy-curated-transformers==0.2.2
-spacy-legacy==3.0.12
-spacy-loggers==1.0.5
+
 
 
 

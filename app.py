@@ -4,11 +4,8 @@ import spacy
 from spellchecker import SpellChecker
 import streamlit as st
 
-import os
-os.environ["THINC_API"] = "numpy"
-
 # Load the spaCy model
-nlp = spacy.load("en_core_web_trf")
+nlp = spacy.load("en_core_web_trf", disable=["gpu"])
 
 # Load the dataset
 countries = pd.read_csv(r"countries.csv")

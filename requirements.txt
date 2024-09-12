@@ -1,23 +1,7 @@
-# Streamlit for building the web app
-streamlit
-
-# Pandas for data handling
 pandas
-
-# RapidFuzz for fuzzy string matching
 rapidfuzz
-
-# spaCy for NLP
-spacy
-
-# SpellChecker for spell checking
+spacy==3.6.1  # Stable version of spaCy
 pyspellchecker
-
-# Specify the transformer-based spaCy model (en_core_web_trf)
-# This line ensures the correct version of the model is installed
-en-core-web-trf @ https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.5.0/en_core_web_trf-3.5.0.tar.gz
-
-# Any additional dependencies required for spaCy's transformer model
-torch
-transformers
-tokenizers==0.13.3
+streamlit
+torch==2.0.1  # PyTorch version
+transformers==4.31.0  # Transformers library for en_core_web_trf model

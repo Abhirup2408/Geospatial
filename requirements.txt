@@ -1,7 +1,11 @@
 pandas
-rapidfuzz
-spacy==3.6.1  # Stable version of spaCy
-pyspellchecker
+rapidfuzz==3.6.1
+pyspellchecker==0.8.1
 streamlit
-torch==2.0.1  # PyTorch version
-transformers==4.31.0  # Transformers library for en_core_web_trf model
+torch==2.2.0  # PyTorch version
+transformers==4.37.2  # Transformers library for en_core_web_trf model
+tokenizers==0.15.1
+spacy==3.7.2
+spacy-curated-transformers==0.2.2
+spacy-legacy==3.0.12
+spacy-loggers==1.0.5

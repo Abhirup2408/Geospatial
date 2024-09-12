@@ -1,20 +1,20 @@
-#pandas
-#rapidfuzz==3.6.1
-#pyspellchecker==0.8.1
-#streamlit
-#torch==2.2.0  # PyTorch version
-#transformers==4.37.2  # Transformers library for en_core_web_trf model
-#tokenizers==0.15.1
-#spacy==3.7.2
-#spacy-curated-transformers==0.2.2
-#spacy-legacy==3.0.12
-#spacy-loggers==1.0.5
-#thinc==8.2.2
-
 pandas
-rapidfuzz
-spacy==3.4.0  # Downgraded spaCy to a stable version
-pyspellchecker
+rapidfuzz==3.6.1
+pyspellchecker==0.8.1
 streamlit
-thinc==8.1.0  # Compatible version of thinc with spaCy 3.4.0
-numpy==1.23.0  # Ensure numpy is compatible with thinc
+torch==2.2.0  # PyTorch version
+transformers==4.37.2  # Transformers library for en_core_web_trf model
+tokenizers==0.15.1
+spacy==3.7.2
+spacy-curated-transformers==0.2.2
+spacy-legacy==3.0.12
+spacy-loggers==1.0.5
+thinc==8.2.2
+
+#pandas
+#rapidfuzz
+#spacy==3.4.0  # Downgraded spaCy to a stable version
+#pyspellchecker
+#streamlit
+#thinc==8.1.0  # Compatible version of thinc with spaCy 3.4.0
+#numpy==1.23.0  # Ensure numpy is compatible with thinc
